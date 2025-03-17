@@ -27,28 +27,37 @@ if (C.length > z) {
 L1 = ["Watermelon", "Pineapple", "Pear", "Banana"];
 L2 = ["Apple", "Banana", "Kiwi", "Orange"];
 
-function findTheBanana(L) {
-    for (var i = 0; i < L.length; i++) {
-        if (L[i] == "Banana") {
-            alert("Found the Banana at index " + i);
-            break;
+// function findTheBanana(L) {
+//     for (var i = 0; i < L.length; i++) {
+//         if (L[i] == "Banana") {
+//             alert("Found the Banana at index " + i);
+//             break;
+//         }
+//     }
+// }
+
+// findTheBanana(L1);
+// findTheBanana(L2);
+
+function checkSingleArray(singleArray, arrayIndex) {
+    for (let i = 0; i < singleArray.length; i++) {
+        if (singleArray[i] === "Banana") {
+            if (arrayIndex === 0) {
+                alert("We found a banana in the first array");
+            } else if (arrayIndex === 1) {
+                alert("We found a banana in the second array");
+            } else {
+                alert("No banana found in first or second array");
+            }
         }
     }
 }
 
-findTheBanana(L1);
-findTheBanana(L2);
+function findTheBananaForEach(arrays) {
+    arrays.forEach(checkSingleArray);
+  }
 
-function findTheBananaForEach(L) {
-    L.forEach(function(fruit, index) {
-        if (fruit == "Banana") {
-            alert("Found the Banana at index " + index);
-        }
-    });
-}
-
-findTheBananaForEach(L1);
-findTheBananaForEach(L2);
+findTheBananaForEach([L1, L2]);
 
 function greetingFunc() {
     var d = new Date();
