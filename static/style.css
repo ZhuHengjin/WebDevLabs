@@ -53,3 +53,36 @@ form * {
     color: white;
     cursor: pointer;
 }
+
+div ul {
+    display: none;
+}
+
+div button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#bioToggle p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+#bioToggle button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#formMessage {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}

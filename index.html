@@ -11,9 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="./static/script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Henry Zhu</title>
 </head>
-<body>
+<body onload="addYear()">
     <header>
         <h1 id="webname">Henry Zhu</h1>
         <nav>
@@ -28,8 +29,32 @@
         <img src="./static/my_photo.JPG" alt="my photo" width="200">
         <p id="intro">I am a student at Carnegie Mellon University, majoring in Information Systems</p>
     </div>
-    <footer>
-        &copy; 2025 design and coded by Henry Zhu
+    <section id="bio">
+        <div id="bioToggle">
+            <p id="shortBio">
+                This is my short bio.
+                <button id="readMore">Read More</button>
+            </p>
+            <p id="fullBio" style="display: none;">
+                This is my extended bio with more details about me.
+                <button id="readLess">Read Less</button>
+            </p>
+        </div>
+    </section>
+    <footer id="copyYear">
+        <p></p>
     </footer>
+    <!-- <script>
+        $(document).ready(function(){
+            $("#readMore").click(function(){
+                $("#shortBio").hide();
+                $("#fullBio").show();
+            });
+            $("#readLess").click(function(){
+                $("#fullBio").hide();
+                $("#shortBio").show();
+            });
+        });
+    </script> -->
 </body>
 </html>

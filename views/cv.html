@@ -11,9 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="../static/script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Henry Zhu</title>
 </head>
-<body>
+<body onload="addYear()">
     <header>
         <h1 id="webname">Henry Zhu</h1>
         <nav>
@@ -51,8 +52,8 @@
 
         <a href="../static/Resume.pdf" target="_blank">My resume (pdf)</a>
     </div>
-    <footer>
-        &copy; 2025 design and coded by Henry Zhu
+    <footer id="copyYear">
+        <p></p>
     </footer>
 </body>
 </html>
