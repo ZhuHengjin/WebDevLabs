@@ -88,9 +88,8 @@ div button {
 }
 
 .container {
-    border-radius: 100%;
     display: inline-block;
-    border-radius: 10%;
+    border-radius: 10px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -100,4 +99,9 @@ div button {
     justify-content: space-around;
     align-items: flex-start;
     gap: 20px;
+}
+
+.funVID {
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
