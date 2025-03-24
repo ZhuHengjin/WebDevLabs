@@ -54,10 +54,6 @@ form * {
     cursor: pointer;
 }
 
-div ul {
-    display: none;
-}
-
 div button {
     background-color: var(--primary-color);
     color: white;
@@ -85,4 +81,23 @@ div button {
     color: red;
     font-weight: bold;
     margin-top: 10px;
+}
+
+.funIMG {
+    border-radius: 100%;
+}
+
+.container {
+    border-radius: 100%;
+    display: inline-block;
+    border-radius: 10%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.mainLayout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
 }

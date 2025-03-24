@@ -85,12 +85,12 @@ function addYear() {
     E.innerHTML = "&copy; " + y + " design and coded by Henry Zhu";
 }
 
-function showList() {
-    var list = document.querySelector('div ul');
-    var btn = document.querySelector('div button');
-    list.style.display = 'block';
-    btn.style.display = 'none';
-}
+// function showList() {
+//     var list = document.querySelector('div ul');
+//     var btn = document.querySelector('div button');
+//     list.style.display = 'block';
+//     btn.style.display = 'none';
+// }
 
 function validateForm() {
     var nameField = document.getElementById("name");
@@ -123,3 +123,16 @@ $(document).ready(function(){
         $("#shortBio").show();
     });
 });
+
+function getAdvice() {
+    fetch('https://api.adviceslip.com/advice')
+        .then(response => response.json())
+        .then(data => {
+            var advice = data.slip.advice;
+            document.getElementById("adviceText").innerText = advice;
+        })
+        .catch(error => {
+            document.getElementById("adviceText").innerText = "Error fetching advice.";
+            console.error(error);
+        });
+}

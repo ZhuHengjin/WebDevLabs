@@ -24,52 +24,61 @@
             <a href="fun.html">Play</a>
         </nav>
     </header>
-    <div>
-        <h2>Contact Me</h2>
+    <div class="mainLayout">
+        <div id="item1">
+            <h2>Find Me!</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.4419552498935!2d-79.94450232330934!3d40.44335417143527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f221e4664a2f%3A0x6978a425592daae!2sUniversity%20Center%2C%205032%20Forbes%20Ave%2C%20Pittsburgh%2C%20PA%2015213!5e0!3m2!1sen!2sus!4v1742776594303!5m2!1sen!2sus" 
+                    width="600" height="450" style="border:0;" 
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <div id="item2">
+            <h2>Contact Me</h2>
 
-        <p id="formMessage"></p>
+            <p id="formMessage"></p>
 
-        <form action="#" method="post" onsubmit="return validateForm()">
-            <div>
-                <label for="name">Your name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
+            <form action="#" method="post" onsubmit="return validateForm()">
+                <div>
+                    <label for="name">Your name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div>
+                    <label for="email">Your email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div>
+                    <label for="comment">Your comment:</label>
+                    <textarea id="comment" name="comment" rows="5" cols="40" required></textarea>
+                </div>
+                
+                <div id="validationMessage"></div>
+                
+                <div>
+                    <input type="submit" value="SEND" id="submit" onclick="validateForm()">
+                </div>
+            </form>
             
-            <div>
-                <label for="email">Your email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            
-            <div>
-                <label for="comment">Your comment:</label>
-                <textarea id="comment" name="comment" rows="5" cols="40" required></textarea>
-            </div>
-            
-            <div id="validationMessage"></div>
-            
-            <div>
-                <input type="submit" value="SEND" id="submit" onclick="validateForm()">
-            </div>
-        </form>
-        
-        <table>
-            <tr>
-                <th>Contact Information</th>
-                <th>Details</th>
-            </tr>
-            <tr>
-                <td>Email</td>
-                <td>henryzhu@example.com</td>
-            </tr>
-            <tr>
-                <td>Phone</td>
-                <td>(123) 456-7890</td>
-            </tr>
-            <tr>
-                <td>LinkedIn</td>
-                <td><a href="https://www.linkedin.com/in/hengjin-zhu-baa955307/">linkedin.com/in/hengjin-zhu</a></td>
-            </tr>
-        </table>
+            <table>
+                <tr>
+                    <th>Contact Information</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>henryzhu@example.com</td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td>(123) 456-7890</td>
+                </tr>
+                <tr>
+                    <td>LinkedIn</td>
+                    <td><a href="https://www.linkedin.com/in/hengjin-zhu-baa955307/">linkedin.com/in/hengjin-zhu</a></td>
+                </tr>
+            </table>
+        </div>
     </div>
     <footer id="copyYear">
         <p></p>

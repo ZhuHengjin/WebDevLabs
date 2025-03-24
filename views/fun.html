@@ -24,14 +24,27 @@
             <a href="fun.html">Play</a>
         </nav>
     </header>
-    <div>
-        <h2>Things I love to do for fun</h2>
-        <button onclick="showList()">Click to see...</button>
-        <ul>
-            <li>Write HTML code</li>
-            <li>Go to 67250 classes</li>
-            <li>Do matrix calculus</li>
-        </ul>
+    <div class="mainLayout">
+        <div id="item1">
+            <h2>Things I love to do for fun</h2>
+            <!-- <button onclick="showList()">Click to see...</button> -->
+            <ul>
+                <li>Write HTML code</li>
+                <li>Go to 67250 classes</li>
+                <li>Do matrix calculus</li>
+            </ul>
+        </div>
+        <div id="item2">
+            <img src="../static/fun_picture.png" alt="WebDev" class="funIMG">
+        </div>
+        <div id="item3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pfaSUYaSgRo?si=05MddURoGteqZaEa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="container" id="item4">
+            <h2>Need Some Advice?</h2>
+            <p id="adviceText">Click the button to get a random piece of advice!</p>
+            <button onclick="getAdvice()">Get Advice</button>
+        </div>
     </div>
     <footer id="copyYear">
         <p></p>
