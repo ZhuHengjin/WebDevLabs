@@ -20,12 +20,22 @@ header {
 #webname {
     color: white;
     background-color: var(--primary-color);
+    animation: pulse 2s infinite;
 }
 
 a {
     text-decoration: none;
     color: var(--primary-color);
     margin-right: 15px;
+}
+
+a.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+a:hover {
+    color: black;
 }
 
 th {
@@ -104,4 +114,48 @@ div button {
 .funVID {
     border-radius: 10px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header'
+    'item1 item2' 
+    'footer';
+}
+
+@media only screen and (max-width: 600px) {
+    grid-container {
+        display: grid;
+        grid-template-areas:
+        'header'
+        'item1' 
+        'item2' 
+        'footer';
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    nav #nav-links {
+        display: none;
+        flex-direction: column;
+    }
+    nav i.fas.fa-bars {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+nav #nav-links.active {
+    display: flex;
+}
+
+nav i.fas.fa-bars {
+    background-color: black;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
 }
